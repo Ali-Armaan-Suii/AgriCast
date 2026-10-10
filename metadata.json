@@ -1,0 +1,6 @@
+{
+  "name": "AgriCast - Deep-Tech Agro-Space Intelligence",
+  "description": "Next-generation precision agriculture platform integrating NASA Earth Science datasets (POWER, SMAP, ECOSTRESS, GPM, NISAR, MODIS/VIIRS) with Android Jetpack Compose Bento UI, Data Sonification, and Early Warning Pipeline.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

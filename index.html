@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriCast - Deep-Tech Agro-Space Intelligence</title>
+    <meta name="description" content="AgriCast: Next-generation precision agriculture platform integrating NASA Earth Science datasets (POWER, SMAP, ECOSTRESS, GPM, NISAR, MODIS/VIIRS) with Android Jetpack Compose Bento UI, Data Sonification, and Early Warning Pipeline." />
+    <meta property="og:title" content="AgriCast - Deep-Tech Agro-Space Intelligence" />
+    <meta property="og:description" content="AgriCast: Next-generation precision agriculture platform integrating NASA Earth Science datasets (POWER, SMAP, ECOSTRESS, GPM, NISAR, MODIS/VIIRS) with Android Jetpack Compose Bento UI, Data Sonification, and Early Warning Pipeline." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- PWA Manifest & App Config -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#E2136E" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <!-- Firebase Compat SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-[#F5F6F8] text-[#212121] antialiased selection:bg-[#E2136E]/20 selection:text-[#E2136E]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
